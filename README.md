@@ -35,7 +35,7 @@ This is a fully responsive admin dashboard for e-commerce management. Built as a
 
 ## 🚀 Live Demo
 
-👉 [View Live Dashboard](https://emoatari.github.io/modernshop-dashboard)
+👉 [View Live Dashboard](https://ehsanmoattari.github.io/modernshop-dashboard)
 
 
 ---
@@ -52,7 +52,7 @@ This is a fully responsive admin dashboard for e-commerce management. Built as a
 ## 📧 Contact
 
 **Developer:** Ehsan Moattari  
-- **GitHub:** [emoatari](https://github.com/emoatari)  
+- **GitHub:** [ehsanmoattari](https://github.com/ehsanmoattari)  
 - **Email:** moattariehsan@gmail.com
 
 ---
