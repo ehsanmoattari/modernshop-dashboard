@@ -11,7 +11,7 @@
         <!-- Custom CSS (for future styles) -->
         <style>
             body {
-                padding-top: 76px; /* برای اینکه هدر fixed روی محتوا نیفتد */
+                padding-top: 76px; 
             }
             .hero-section {
                 color: white;
@@ -34,7 +34,7 @@
                 padding: 40px 0;
                 margin-top: 60px;
             }
-            /* تنظیم ارتفاع یکسان برای تصاویر کارت */
+            
             .card-img-top {
                 width: 100%;
                 height: 200px;
@@ -46,7 +46,7 @@
                 background-color: #6f42c1;
                 color: white;
             }
-            /* آیکون‌های شبکه‌های اجتماعی رنگی با hover */
+            
             .social-icon {
                 font-size: 1.5rem;
                 transition: all 0.3s ease;
@@ -70,7 +70,7 @@
                 transform: translateY(-3px);
                 opacity: 0.8;
             }
-            /* برای Tooltip */
+            
             [data-bs-toggle="tooltip"] {
                 cursor: pointer;
             }
@@ -84,7 +84,7 @@
                 <a href="#" class="navbar-brand fw-bold text-primary">
                     ModernShop
                 </a>
-                <!-- دکمه همبرگری برای موبایل -->
+                
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -108,7 +108,7 @@
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
-                    <!-- باکس جستجو -->
+                    
                     <form class="d-flex me-3" role="search">
                         <input
                             type="search"
@@ -123,14 +123,14 @@
                             <span class="bi-search"></span>
                         </button>
                     </form>
-                    <!-- دکمه ورود (Login) -->
+                    
                     <a
                         href="login.html"
                         class="btn btn-outline-secondary btn me-2"
                     >
                         <span class="bi-person"></span>Login
                     </a>
-                    <!-- دکمه سبد خرید (با Badge شمارنده) -->
+                    
                     <a href="#" class="btn btn-primary position-relative"
                         ><span class="bi-basket pe-2"></span>Cart
                         <span
@@ -149,7 +149,7 @@
             class="carousel slide mb-5"
             data-bs-ride="carousel"
         >
-            <!-- شاخص‌های اسلایدر -->
+            
             <div class="carousel-indicators">
                 <button
                     type="button"
@@ -168,9 +168,9 @@
                     data-bs-slide-to="2"
                 ></button>
             </div>
-            <!-- اسلایدها -->
+            
             <div class="carousel-inner">
-                <!-- اسلاید 1 -->
+                
                 <div class="carousel-item active">
                     <div
                         class="hero-section"
@@ -202,7 +202,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- اسلاید 2 - تخفیف ویژه -->
+                
                 <div class="carousel-item">
                     <div
                         class="hero-section"
@@ -232,7 +232,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- اسلاید 3 - محصولات جدید -->
+                
                 <div class="carousel-item">
                     <div
                         class="hero-section"
@@ -265,7 +265,7 @@
                     </div>
                 </div>
             </div>
-            <!-- دکمه‌های قبلی و بعدی -->
+            
             <button
                 class="carousel-control-prev"
                 type="button"
@@ -307,7 +307,7 @@
             </ol>
         </nav>
         <!-- end Breadcrumb -->
-        <!-- دکمه فیلتر برای موبایل -->
+        
         <div
             class="d-flex justify-content-between align-self-center mb-4 d-lg-none"
         >
@@ -321,7 +321,7 @@
                 <i class="bi bi-funnel"></i>Filter
             </button>
         </div>
-        <!-- Offcanvas فیلتر -->
+        
         <div
             class="offcanvas offcanvas-start"
             tabindex="-1"
@@ -395,7 +395,7 @@
                 <p class="text-muted">Check out our best-selling items</p>
                 <div class="border-bottom w-25 mx-auto"></div>
             </div>
-            <!-- ردیف محصولات (واکنش‌گرا) -->
+            
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
                     <div class="card product-card shadow-sm h-100">
@@ -606,7 +606,7 @@
                     </div>
                 </div>
             </div>
-            <!-- دکمه مشاهده همه محصولات -->
+            
             <div class="text-center mt-5">
                 <button class="btn btn-primary btn-lg px-5">
                     View All Products
@@ -908,7 +908,7 @@
         <footer>
             <div class="container">
                 <div class="row g-4">
-                    <!-- ستون 1: درباره ما -->
+                    
                     <div class="col-md-4">
                         <h5 class="mb-3">ModernShop</h5>
                         <p class="text-white-50 small">
@@ -931,7 +931,7 @@
                             ></a>
                         </div>
                     </div>
-                    <!-- ستون 2: لینک‌های سریع -->
+                    
                     <div class="col-md-2">
                         <h5 class="mb-3">Quick Links</h5>
                         <ul class="list-unstyled">
@@ -965,7 +965,7 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- ستون 3: خدمات مشتریان -->
+                    
                     <div class="col-md-3">
                         <h5 class="mb-3">Customer Service</h5>
                         <ul class="list-unstyled">
@@ -999,7 +999,7 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- ستون 4: خبرنامه -->
+                    
                     <div class="col-md-3">
                         <h5 class="mb-3">Newsletter</h5>
                         <p class="text-white-50 small">
@@ -1070,9 +1070,8 @@
         </button>
 
         <!-- Bootstrap JS (Local) -->
-        <script src="Assets/JS/bootstrap.bundle.min.js"></script>
+        <script src="Assets/js/bootstrap.bundle.min.js"></script>
         <script>
-            // فعال کردن Tooltipها
             const tooltipTriggerList = document.querySelectorAll(
                 '[data-bs-toggle="tooltip"]',
             );
@@ -1081,7 +1080,6 @@
             );
         </script>
         <script>
-            // تابع نمایش توست
             function showToast() {
                 const toastEl = document.getElementById("cartToast");
                 if (toastEl) {
@@ -1090,7 +1088,6 @@
                 }
             }
 
-            // اضافه کردن رویداد کلیک به دکمه‌های Add to Cart
             document.querySelectorAll(".btn-primary").forEach((btn) => {
                 if (btn.innerText.trim() === "Add to Cart") {
                     btn.addEventListener("click", function (e) {
@@ -1101,7 +1098,6 @@
             });
         </script>
         <script>
-            // دکمه بازگشت به بالا
             window.onscroll = function () {
                 const btn = document.getElementById("backToTopBtn");
                 if (
