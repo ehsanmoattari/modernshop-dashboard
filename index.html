@@ -29,7 +29,8 @@
 
         <nav class="main-navigation" aria-label="Main navigation">
           <a class="nav-link nav-link-active" href="/" aria-current="page">Home</a>
-          <a class="nav-link" href="#shop">Shop</a>
+          <a class="nav-link" href="#categories">Categories</a>
+          <a class="nav-link" href="#featured-products">Shop</a>
         </nav>
 
         <div class="header-actions">
@@ -40,7 +41,7 @@
               <path d="M9 9V6a3 3 0 0 1 6 0v3" />
             </svg>
             <span>Bag</span>
-            <span class="cart-count">0</span>
+            <span class="cart-count" aria-live="polite">0</span>
           </a>
         </div>
       </div>
@@ -56,8 +57,8 @@
             intention to your everyday.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="/login.html">
-              Get started
+            <a class="button button-primary" href="#featured-products">
+              Explore the edit
               <svg viewBox="0 0 20 20" aria-hidden="true">
                 <path d="M4 10h11M10 5l5 5-5 5" />
               </svg>
@@ -91,6 +92,134 @@
         <span><span class="highlight-dot"></span> Made for everyday</span>
         <span><span class="highlight-dot"></span> Simple by design</span>
       </div>
+
+      <section class="categories-section section-shell" id="categories" aria-labelledby="categories-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> FIND YOUR FAVOURITES</p>
+            <h2 id="categories-title">A little something for <span>every day.</span></h2>
+          </div>
+          <p class="section-intro">Thoughtful pieces for the spaces you live in and the life you move through.</p>
+        </div>
+
+        <div class="category-grid">
+          <a class="category-card category-card-home" href="#featured-products">
+            <img
+              src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=760&q=85"
+              alt="Calm, naturally styled living room"
+              loading="lazy"
+            />
+            <span class="category-overlay"></span>
+            <span class="category-content"><small>01 / THE SPACE</small><strong>Home objects</strong><span>Explore collection <span aria-hidden="true">↗</span></span></span>
+          </a>
+          <a class="category-card category-card-accessories" href="#featured-products">
+            <img
+              src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=760&q=85"
+              alt="A considered selection of everyday accessories"
+              loading="lazy"
+            />
+            <span class="category-overlay"></span>
+            <span class="category-content"><small>02 / THE DETAILS</small><strong>Accessories</strong><span>Explore collection <span aria-hidden="true">↗</span></span></span>
+          </a>
+          <a class="category-card category-card-workspace" href="#featured-products">
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=760&q=85"
+              alt="Minimal workspace with a laptop and desk essentials"
+              loading="lazy"
+            />
+            <span class="category-overlay"></span>
+            <span class="category-content"><small>03 / THE FOCUS</small><strong>Workspace</strong><span>Explore collection <span aria-hidden="true">↗</span></span></span>
+          </a>
+          <a class="category-card category-card-carry" href="#featured-products">
+            <img
+              src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=760&q=85"
+              alt="Neutral everyday carry bag"
+              loading="lazy"
+            />
+            <span class="category-overlay"></span>
+            <span class="category-content"><small>04 / ON THE MOVE</small><strong>Everyday carry</strong><span>Explore collection <span aria-hidden="true">↗</span></span></span>
+          </a>
+        </div>
+      </section>
+
+      <section class="featured-section" id="featured-products" aria-labelledby="featured-title">
+        <div class="section-shell">
+          <div class="section-heading featured-heading">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-line"></span> THE CONSIDERED EDIT</p>
+              <h2 id="featured-title">Good things, <span>well chosen.</span></h2>
+            </div>
+            <p class="section-intro">A few everyday favourites worth making room for.</p>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card">
+              <div class="product-image-wrap">
+                <span class="product-tag">BESTSELLER</span>
+                <img
+                  src="https://images.unsplash.com/photo-1503602649619-2c3b7b7a7b5a?auto=format&fit=crop&w=760&q=85"
+                  alt="Minimal ceramic table lamp"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-info">
+                <div><p class="product-category">HOME OBJECTS</p><h3>Forma Table Lamp</h3></div>
+                <p class="product-price">$89.00</p>
+              </div>
+              <button class="add-to-bag-button" type="button" data-product="Forma Table Lamp">Add to bag <span aria-hidden="true">+</span></button>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image-wrap">
+                <span class="product-tag product-tag-new">JUST IN</span>
+                <img
+                  src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=760&q=85"
+                  alt="Sculptural neutral ceramic vase"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-info">
+                <div><p class="product-category">HOME OBJECTS</p><h3>Sunday Ceramic Vase</h3></div>
+                <p class="product-price">$42.00</p>
+              </div>
+              <button class="add-to-bag-button" type="button" data-product="Sunday Ceramic Vase">Add to bag <span aria-hidden="true">+</span></button>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=760&q=85"
+                  alt="Structured everyday tote bag"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-info">
+                <div><p class="product-category">EVERYDAY CARRY</p><h3>Daily Form Tote</h3></div>
+                <p class="product-price">$68.00</p>
+              </div>
+              <button class="add-to-bag-button" type="button" data-product="Daily Form Tote">Add to bag <span aria-hidden="true">+</span></button>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image-wrap">
+                <span class="product-tag">EDITOR'S PICK</span>
+                <img
+                  src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=760&q=85"
+                  alt="Minimal wristwatch with a neutral background"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-info">
+                <div><p class="product-category">ACCESSORIES</p><h3>Classic Everyday Watch</h3></div>
+                <p class="product-price">$120.00</p>
+              </div>
+              <button class="add-to-bag-button" type="button" data-product="Classic Everyday Watch">Add to bag <span aria-hidden="true">+</span></button>
+            </article>
+          </div>
+          <p class="cart-feedback" role="status" aria-live="polite"></p>
+          <p class="demo-note">Demo products and prices — your bag is kept in this page session only.</p>
+        </div>
+      </section>
     </main>
 
     <script type="module" src="/src/app/storefront.js"></script>
