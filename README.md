@@ -1,61 +1,42 @@
-# ModernShop — E-commerce UI & Admin Dashboard
+# ModernShop
 
-A responsive front-end practice project that presents a sample online store and an admin dashboard.
+ModernShop is being rebuilt as a modular e-commerce storefront and business-management demo using JavaScript ES Modules, Vite, and custom CSS.
 
-## Project Overview
+## Current stage
 
-ModernShop is a static demonstration of common e-commerce interface patterns. It was built to practice HTML, CSS, Bootstrap, and JavaScript.
+The `modern-rebuild` branch contains the initial multi-page application scaffold:
 
-## Features
+- Storefront entry: `index.html`
+- Sign-in screen entry: `login.html`
+- Admin workspace entry: `admin/index.html`
+- JavaScript ES Module entry points under `src/app/`
+- Shared custom CSS under `src/styles/`
+- An initial IndexedDB connection utility under `src/core/storage/`
 
-### Storefront
-- Responsive product listing and promotional carousel
-- Product quick-view modals
-- Bootstrap navigation and mobile filter panel
-- Demo add-to-cart interaction with toast feedback
+## Development
 
-### Admin Dashboard
-- Summary cards and sales progress indicators using sample data
-- Orders table with a confirmation modal
-- Front-end row removal for the demo (no database or API)
-- Product category tabs
-- Responsive sidebar toggle
-- Bootstrap toast notifications
+Requires a current Node.js LTS release.
 
-## Technologies
+```bash
+npm install
+npm run dev
+```
 
-| Technology | Usage |
-|---|---|
-| HTML5 | Page structure |
-| CSS3 | Custom styling |
-| Bootstrap 5.3 | Responsive layout and UI components |
-| JavaScript | Demo interactions and DOM updates |
-| Bootstrap Icons | Interface icons |
+## Build and preview
 
-## Live Demo
+```bash
+npm run build
+npm run preview
+```
 
-[Open ModernShop](https://ehsanmoattari.github.io/modernshop-dashboard)
+## Tests
 
-## Demo Login
+```bash
+npm test
+```
 
-- **Email:** admin@modernshop.com
-- **Password:** admin123
+## Important limitations
 
-The login is a client-side demonstration only. It does not provide real authentication or protect private data.
+This scaffold does not yet implement real authentication, products, inventory, orders, customers, checkout, payment processing, or business analytics. The IndexedDB utility only opens the local database; no application data is stored yet.
 
-## Demo Limitations
-
-- Product, sales, and order information is static sample data.
-- Add to Cart displays a confirmation toast; it does not maintain a real cart or process checkout.
-- Deleting an order removes its row from the current page only; changes are not saved to a server.
-- There is no backend, database, payment processing, or real user account system.
-
-## Contact
-
-**Developer:** Ehsan Moattari  
-- [GitHub](https://github.com/ehsanmoattari)
-- moattariehsan@gmail.com
-
-## License
-
-Free for personal and commercial use.
+The original project remains available on the `main` branch while the rebuild is developed separately.
