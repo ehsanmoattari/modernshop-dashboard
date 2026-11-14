@@ -1,227 +1,440 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Discover thoughtfully selected everyday essentials at ModernShop."
-    />
-    <meta name="theme-color" content="#fbfcfe" />
-    <title>ModernShop — Thoughtful Finds for Everyday Living</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="announcement-bar">
-      <p>Thoughtful finds for everyday living <span aria-hidden="true">✦</span> Free shipping on orders over $100</p>
-    </div>
-
-    <header class="site-header">
-      <div class="header-inner">
-        <a class="brand" href="/" aria-label="ModernShop home">
-          modern<span>shop</span><span class="brand-period">.</span>
-        </a>
-
-        <nav class="main-navigation" aria-label="Main navigation">
-          <a class="nav-link nav-link-active" href="/" aria-current="page">Home</a>
-          <a class="nav-link" href="#categories">Categories</a>
-          <a class="nav-link" href="#featured-products">Shop</a>
-        </nav>
-
-        <div class="header-actions">
-          <a class="sign-in-link" href="/login.html">Sign in</a>
-          <a class="cart-link" href="/login.html" aria-label="Sign in to access your bag">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M5 8h14l-1 12H6L5 8Z" />
-              <path d="M9 9V6a3 3 0 0 1 6 0v3" />
-            </svg>
-            <span>Bag</span>
-            <span class="cart-count" aria-live="polite">0</span>
-          </a>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero-section" id="shop" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-line"></span> THE EVERYDAY EDITION</p>
-          <h1 id="hero-title">Make room for <span>better</span> things.</h1>
-          <p class="hero-description">
-            Discover considered essentials that bring a little more ease and
-            intention to your everyday.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#featured-products">
-              Explore the edit
-              <svg viewBox="0 0 20 20" aria-hidden="true">
-                <path d="M4 10h11M10 5l5 5-5 5" />
-              </svg>
-            </a>
-          </div>
-          <div class="hero-note">
-            <span class="note-stars" aria-hidden="true">★★★★★</span>
-            <span>Curated with care, chosen to last.</span>
-          </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Discover thoughtfully selected everyday essentials at ModernShop."
+        />
+        <meta name="theme-color" content="#fbfcfe" />
+        <title>ModernShop — Thoughtful Finds for Everyday Living</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="announcement-bar">
+            <p>
+                Thoughtful finds for everyday living
+                <span aria-hidden="true">✦</span> Free shipping on orders over
+                $100
+            </p>
         </div>
 
-        <div class="hero-visual" aria-label="A carefully styled everyday watch">
-          <div class="visual-shape visual-shape-one"></div>
-          <div class="visual-shape visual-shape-two"></div>
-          <img
-            class="hero-image"
-            src="/images/hero.webp"
-            alt="Minimal wristwatch with a neutral background"
-            fetchpriority="high"
-          />
-          <div class="floating-note">
-            <span class="floating-note-icon" aria-hidden="true">✳</span>
-            <span><strong>Less, but better.</strong><small>Our point of view</small></span>
-          </div>
-          <span class="visual-index" aria-hidden="true">01 / 04</span>
-        </div>
-      </section>
+        <header class="site-header">
+            <div class="header-inner">
+                <a class="brand" href="/" aria-label="ModernShop home">
+                    modern<span>shop</span><span class="brand-period">.</span>
+                </a>
 
-      <div class="hero-bottom" aria-label="Shopping highlights">
-        <span><span class="highlight-dot"></span> Carefully selected</span>
-        <span><span class="highlight-dot"></span> Made for everyday</span>
-        <span><span class="highlight-dot"></span> Simple by design</span>
-      </div>
+                <nav class="main-navigation" aria-label="Main navigation">
+                    <a
+                        class="nav-link nav-link-active"
+                        href="/"
+                        aria-current="page"
+                        >Home</a
+                    >
+                    <a class="nav-link" href="#categories">Categories</a>
+                    <a class="nav-link" href="#featured-products">Shop</a>
+                </nav>
 
-      <section class="categories-section section-shell" id="categories" aria-labelledby="categories-title">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow"><span class="eyebrow-line"></span> FIND YOUR FAVOURITES</p>
-            <h2 id="categories-title">A little something for <span>every day.</span></h2>
-          </div>
-          <p class="section-intro">Thoughtful pieces for the spaces you live in and the life you move through.</p>
-        </div>
-
-        <div class="category-grid">
-          <a class="category-card category-card-home" href="#featured-products">
-            <img
-              src="/images/category-home.webp"
-              alt="Calm, naturally styled living room"
-              loading="lazy"
-            />
-            <span class="category-overlay"></span>
-            <span class="category-content"><small>01 / THE SPACE</small><strong>Home objects</strong><span>Explore collection <span aria-hidden="true">↗</span></span></span>
-          </a>
-          <a class="category-card category-card-accessories" href="#featured-products">
-            <img
-              src="/images/category-accessories.webp"
-              alt="A considered selection of everyday accessories"
-              loading="lazy"
-            />
-            <span class="category-overlay"></span>
-            <span class="category-content"><small>02 / THE DETAILS</small><strong>Accessories</strong><span>Explore collection <span aria-hidden="true">↗</span></span></span>
-          </a>
-          <a class="category-card category-card-workspace" href="#featured-products">
-            <img
-              src="/images/category-workspace.webp"
-              alt="Minimal workspace with a laptop and desk essentials"
-              loading="lazy"
-            />
-            <span class="category-overlay"></span>
-            <span class="category-content"><small>03 / THE FOCUS</small><strong>Workspace</strong><span>Explore collection <span aria-hidden="true">↗</span></span></span>
-          </a>
-          <a class="category-card category-card-carry" href="#featured-products">
-            <img
-              src="/images/category-everyday.webp"
-              alt="Neutral everyday carry bag"
-              loading="lazy"
-            />
-            <span class="category-overlay"></span>
-            <span class="category-content"><small>04 / ON THE MOVE</small><strong>Everyday carry</strong><span>Explore collection <span aria-hidden="true">↗</span></span></span>
-          </a>
-        </div>
-      </section>
-
-      <section class="featured-section" id="featured-products" aria-labelledby="featured-title">
-        <div class="section-shell">
-          <div class="section-heading featured-heading">
-            <div>
-              <p class="eyebrow"><span class="eyebrow-line"></span> THE CONSIDERED EDIT</p>
-              <h2 id="featured-title">Good things, <span>well chosen.</span></h2>
+                <div class="header-actions">
+                    <a class="sign-in-link" href="/login.html">Sign in</a>
+                    <a
+                        class="cart-link"
+                        href="/login.html"
+                        aria-label="Sign in to access your bag"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 8h14l-1 12H6L5 8Z" />
+                            <path d="M9 9V6a3 3 0 0 1 6 0v3" />
+                        </svg>
+                        <span>Bag</span>
+                        <span class="cart-count" aria-live="polite">0</span>
+                    </a>
+                </div>
             </div>
-            <p class="section-intro">A few everyday favourites worth making room for.</p>
-          </div>
+        </header>
 
-          <div class="product-grid">
-            <article class="product-card">
-              <div class="product-image-wrap">
-                <span class="product-tag">BESTSELLER</span>
-                <img
-                  src="/images/product-lamp.webp"
-                  alt="Minimal ceramic table lamp"
-                  loading="lazy"
-                />
-              </div>
-              <div class="product-info">
-                <div><p class="product-category">HOME OBJECTS</p><h3>Forma Table Lamp</h3></div>
-                <p class="product-price">$89.00</p>
-              </div>
-              <button class="add-to-bag-button" type="button" data-product="Forma Table Lamp">Add to bag <span aria-hidden="true">+</span></button>
-            </article>
+        <main>
+            <section
+                class="hero-section"
+                id="shop"
+                aria-labelledby="hero-title"
+            >
+                <div class="hero-copy">
+                    <p class="eyebrow">
+                        <span class="eyebrow-line"></span> THE EVERYDAY EDITION
+                    </p>
+                    <h1 id="hero-title">
+                        Make room for <span>better</span> things.
+                    </h1>
+                    <p class="hero-description">
+                        Discover considered essentials that bring a little more
+                        ease and intention to your everyday.
+                    </p>
+                    <div class="hero-actions">
+                        <a
+                            class="button button-primary"
+                            href="#featured-products"
+                        >
+                            Explore the edit
+                            <svg viewBox="0 0 20 20" aria-hidden="true">
+                                <path d="M4 10h11M10 5l5 5-5 5" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="hero-note">
+                        <span class="note-stars" aria-hidden="true">★★★★★</span>
+                        <span>Curated with care, chosen to last.</span>
+                    </div>
+                </div>
 
-            <article class="product-card">
-              <div class="product-image-wrap">
-                <span class="product-tag product-tag-new">JUST IN</span>
-                <img
-                  src="/images/product-vase.webp"
-                  alt="Sculptural neutral ceramic vase"
-                  loading="lazy"
-                />
-              </div>
-              <div class="product-info">
-                <div><p class="product-category">HOME OBJECTS</p><h3>Sunday Ceramic Vase</h3></div>
-                <p class="product-price">$42.00</p>
-              </div>
-              <button class="add-to-bag-button" type="button" data-product="Sunday Ceramic Vase">Add to bag <span aria-hidden="true">+</span></button>
-            </article>
+                <div
+                    class="hero-visual"
+                    aria-label="A carefully styled everyday watch"
+                >
+                    <div class="visual-shape visual-shape-one"></div>
+                    <div class="visual-shape visual-shape-two"></div>
+                    <img
+                        class="hero-image"
+                        src="/images/hero.webp"
+                        alt="Minimal wristwatch with a neutral background"
+                        fetchpriority="high"
+                    />
+                    <div class="floating-note">
+                        <span class="floating-note-icon" aria-hidden="true"
+                            >✳</span
+                        >
+                        <span
+                            ><strong>Less, but better.</strong
+                            ><small>Our point of view</small></span
+                        >
+                    </div>
+                    <span class="visual-index" aria-hidden="true">01 / 04</span>
+                </div>
+            </section>
 
-            <article class="product-card">
-              <div class="product-image-wrap">
-                <img
-                  src="/images/product-tote.webp"
-                  alt="Structured everyday tote bag"
-                  loading="lazy"
-                />
-              </div>
-              <div class="product-info">
-                <div><p class="product-category">EVERYDAY CARRY</p><h3>Daily Form Tote</h3></div>
-                <p class="product-price">$68.00</p>
-              </div>
-              <button class="add-to-bag-button" type="button" data-product="Daily Form Tote">Add to bag <span aria-hidden="true">+</span></button>
-            </article>
+            <div class="hero-bottom" aria-label="Shopping highlights">
+                <span
+                    ><span class="highlight-dot"></span> Carefully
+                    selected</span
+                >
+                <span
+                    ><span class="highlight-dot"></span> Made for everyday</span
+                >
+                <span
+                    ><span class="highlight-dot"></span> Simple by design</span
+                >
+            </div>
 
-            <article class="product-card">
-              <div class="product-image-wrap">
-                <span class="product-tag">EDITOR'S PICK</span>
-                <img
-                  src="/images/product-watch.webp"
-                  alt="Minimal wristwatch with a neutral background"
-                  loading="lazy"
-                />
-              </div>
-              <div class="product-info">
-                <div><p class="product-category">ACCESSORIES</p><h3>Classic Everyday Watch</h3></div>
-                <p class="product-price">$120.00</p>
-              </div>
-              <button class="add-to-bag-button" type="button" data-product="Classic Everyday Watch">Add to bag <span aria-hidden="true">+</span></button>
-            </article>
-          </div>
-          <p class="cart-feedback" role="status" aria-live="polite"></p>
-          <p class="demo-note">Demo products and prices — your bag is kept in this page session only.</p>
-        </div>
-      </section>
-    </main>
+            <section
+                class="categories-section section-shell"
+                id="categories"
+                aria-labelledby="categories-title"
+            >
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">
+                            <span class="eyebrow-line"></span> FIND YOUR
+                            FAVOURITES
+                        </p>
+                        <h2 id="categories-title">
+                            A little something for <span>every day.</span>
+                        </h2>
+                    </div>
+                    <p class="section-intro">
+                        Thoughtful pieces for the spaces you live in and the
+                        life you move through.
+                    </p>
+                </div>
 
-    <script type="module" src="/src/app/storefront.js"></script>
-  </body>
+                <div class="category-grid">
+                    <a
+                        class="category-card category-card-home"
+                        href="#featured-products"
+                    >
+                        <img
+                            src="/images/category-home.webp"
+                            alt="Calm, naturally styled living room"
+                            loading="lazy"
+                        />
+                        <span class="category-overlay"></span>
+                        <span class="category-content"
+                            ><small>01 / THE SPACE</small
+                            ><strong>Home objects</strong
+                            ><span
+                                >Explore collection
+                                <span aria-hidden="true">↗</span></span
+                            ></span
+                        >
+                    </a>
+                    <a
+                        class="category-card category-card-accessories"
+                        href="#featured-products"
+                    >
+                        <img
+                            src="/images/category-accessories.webp"
+                            alt="A considered selection of everyday accessories"
+                            loading="lazy"
+                        />
+                        <span class="category-overlay"></span>
+                        <span class="category-content"
+                            ><small>02 / THE DETAILS</small
+                            ><strong>Accessories</strong
+                            ><span
+                                >Explore collection
+                                <span aria-hidden="true">↗</span></span
+                            ></span
+                        >
+                    </a>
+                    <a
+                        class="category-card category-card-workspace"
+                        href="#featured-products"
+                    >
+                        <img
+                            src="/images/category-workspace.webp"
+                            alt="Minimal workspace with a laptop and desk essentials"
+                            loading="lazy"
+                        />
+                        <span class="category-overlay"></span>
+                        <span class="category-content"
+                            ><small>03 / THE FOCUS</small
+                            ><strong>Workspace</strong
+                            ><span
+                                >Explore collection
+                                <span aria-hidden="true">↗</span></span
+                            ></span
+                        >
+                    </a>
+                    <a
+                        class="category-card category-card-carry"
+                        href="#featured-products"
+                    >
+                        <img
+                            src="/images/category-everyday.webp"
+                            alt="Neutral everyday carry bag"
+                            loading="lazy"
+                        />
+                        <span class="category-overlay"></span>
+                        <span class="category-content"
+                            ><small>04 / ON THE MOVE</small
+                            ><strong>Everyday carry</strong
+                            ><span
+                                >Explore collection
+                                <span aria-hidden="true">↗</span></span
+                            ></span
+                        >
+                    </a>
+                </div>
+            </section>
+
+            <section
+                class="featured-section"
+                id="featured-products"
+                aria-labelledby="featured-title"
+            >
+                <div class="section-shell">
+                    <div class="section-heading featured-heading">
+                        <div>
+                            <p class="eyebrow">
+                                <span class="eyebrow-line"></span> THE
+                                CONSIDERED EDIT
+                            </p>
+                            <h2 id="featured-title">
+                                Good things, <span>well chosen.</span>
+                            </h2>
+                        </div>
+                        <p class="section-intro">
+                            A few everyday favourites worth making room for.
+                        </p>
+                    </div>
+
+                    <div class="product-grid">
+                        <article class="product-card">
+                            <div class="product-image-wrap">
+                                <span class="product-tag">BESTSELLER</span>
+                                <img
+                                    src="/images/product-lamp.webp"
+                                    alt="Minimal ceramic table lamp"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <div class="product-info">
+                                <div>
+                                    <p class="product-category">HOME OBJECTS</p>
+                                    <h3>Forma Table Lamp</h3>
+                                </div>
+                                <p class="product-price">$89.00</p>
+                            </div>
+                            <button
+                                class="add-to-bag-button"
+                                type="button"
+                                data-product="Forma Table Lamp"
+                            >
+                                Add to bag <span aria-hidden="true">+</span>
+                            </button>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image-wrap">
+                                <span class="product-tag product-tag-new"
+                                    >JUST IN</span
+                                >
+                                <img
+                                    src="/images/product-vase.webp"
+                                    alt="Sculptural neutral ceramic vase"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <div class="product-info">
+                                <div>
+                                    <p class="product-category">HOME OBJECTS</p>
+                                    <h3>Sunday Ceramic Vase</h3>
+                                </div>
+                                <p class="product-price">$42.00</p>
+                            </div>
+                            <button
+                                class="add-to-bag-button"
+                                type="button"
+                                data-product="Sunday Ceramic Vase"
+                            >
+                                Add to bag <span aria-hidden="true">+</span>
+                            </button>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image-wrap">
+                                <img
+                                    src="/images/product-tote.webp"
+                                    alt="Structured everyday tote bag"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <div class="product-info">
+                                <div>
+                                    <p class="product-category">
+                                        EVERYDAY CARRY
+                                    </p>
+                                    <h3>Daily Form Tote</h3>
+                                </div>
+                                <p class="product-price">$68.00</p>
+                            </div>
+                            <button
+                                class="add-to-bag-button"
+                                type="button"
+                                data-product="Daily Form Tote"
+                            >
+                                Add to bag <span aria-hidden="true">+</span>
+                            </button>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image-wrap">
+                                <span class="product-tag">EDITOR'S PICK</span>
+                                <img
+                                    src="/images/product-watch.webp"
+                                    alt="Minimal wristwatch with a neutral background"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <div class="product-info">
+                                <div>
+                                    <p class="product-category">ACCESSORIES</p>
+                                    <h3>Classic Everyday Watch</h3>
+                                </div>
+                                <p class="product-price">$120.00</p>
+                            </div>
+                            <button
+                                class="add-to-bag-button"
+                                type="button"
+                                data-product="Classic Everyday Watch"
+                            >
+                                Add to bag <span aria-hidden="true">+</span>
+                            </button>
+                        </article>
+                    </div>
+                    <p
+                        class="cart-feedback"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+                    <p class="demo-note">
+                        Demo products and prices — your bag is kept in this page
+                        session only.
+                    </p>
+                </div>
+            </section>
+            <section class="benefits-section" aria-labelledby="benefits-title">
+                <div class="section-shell">
+                    <div class="benefits-heading">
+                        <p class="eyebrow">
+                            <span class="eyebrow-line"></span>
+                            THE MODERNSHOP DIFFERENCE
+                        </p>
+                        <h2 id="benefits-title">
+                            The little things <span>matter.</span>
+                        </h2>
+                    </div>
+
+                    <div class="benefits-grid">
+                        <article class="benefit-card">
+                            <div class="benefit-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"
+                                    />
+                                </svg>
+                            </div>
+                            <h3>Thoughtfully Selected</h3>
+                            <p>
+                                Products chosen with care, quality and purpose
+                                in mind.
+                            </p>
+                        </article>
+
+                        <article class="benefit-card">
+                            <div class="benefit-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="4" />
+                                    <path
+                                        d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"
+                                    />
+                                </svg>
+                            </div>
+                            <h3>Made for Everyday</h3>
+                            <p>
+                                Practical pieces that fit naturally into daily
+                                life.
+                            </p>
+                        </article>
+
+                        <article class="benefit-card">
+                            <div class="benefit-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="m12 3 1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2L12 3Z"
+                                    />
+                                    <path
+                                        d="m19 14 1.1 2.9L23 18l-2.9 1.1L19 22l-1.1-2.9L15 18l2.9-1.1L19 14Z"
+                                    />
+                                </svg>
+                            </div>
+                            <h3>Simple by Design</h3>
+                            <p>
+                                Clean forms, timeless style and less unnecessary
+                                clutter.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script type="module" src="/src/app/storefront.js"></script>
+    </body>
 </html>
