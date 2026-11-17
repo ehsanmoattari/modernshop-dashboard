@@ -56,8 +56,30 @@
                         <span>Bag</span>
                         <span class="cart-count" aria-live="polite">0</span>
                     </a>
+                    <button
+                        class="menu-toggle"
+                        type="button"
+                        aria-label="Open navigation menu"
+                        aria-expanded="false"
+                        aria-controls="mobile-navigation"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M4 7h16M4 12h16M4 17h16" />
+                        </svg>
+                    </button>
                 </div>
             </div>
+            <nav
+                class="mobile-navigation"
+                id="mobile-navigation"
+                aria-label="Mobile navigation"
+                hidden
+            >
+                <a href="/" aria-current="page">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#featured-products">Shop</a>
+                <a href="/login.html">Sign in</a>
+            </nav>
         </header>
 
         <main>

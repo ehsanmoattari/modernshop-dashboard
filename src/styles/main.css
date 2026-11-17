@@ -1201,3 +1201,67 @@ a {
         gap: 45px;
     }
 }
+
+/* Mobile Navigation */
+
+.menu-toggle {
+    display: none;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-line);
+    border-radius: 6px;
+    background: transparent;
+    color: var(--color-ink);
+    cursor: pointer;
+}
+
+.menu-toggle svg {
+    width: 21px;
+    height: 21px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+}
+
+.mobile-navigation {
+    display: none;
+}
+
+@media (max-width: 680px) {
+    .menu-toggle {
+        display: inline-flex;
+    }
+
+    .mobile-navigation:not([hidden]) {
+        position: absolute;
+        z-index: 5;
+        top: 100%;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 12px 20px 18px;
+        border-bottom: 1px solid var(--color-line);
+        background: #fbfcfe;
+        box-shadow: 0 12px 24px rgb(40 48 72 / 7%);
+    }
+
+    .mobile-navigation a {
+        padding: 13px 4px;
+        border-bottom: 1px solid var(--color-line);
+        color: #596276;
+        font-size: 0.84rem;
+        font-weight: 600;
+    }
+
+    .mobile-navigation a:last-child {
+        border-bottom: 0;
+    }
+
+    .mobile-navigation a:hover {
+        color: var(--color-primary);
+    }
+}
