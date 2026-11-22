@@ -1,27 +1,39 @@
 import "../styles/main.css";
+import { createCart } from "../features/cart/cart.js";
+import { createCartUI } from "../features/cart/cart-ui.js";
 
 document.documentElement.dataset.app = "storefront";
 
-const cartCount = document.querySelector(".cart-count");
+// Shopping cart
+const cart = createCart();
+const cartUI = createCartUI(cart);
+
+const cartButton = document.querySelector(".cart-link");
 const cartFeedback = document.querySelector(".cart-feedback");
 const addToBagButtons = document.querySelectorAll(".add-to-bag-button");
 
-let bagItemCount = 0;
+cartButton.addEventListener("click", () => {
+    cartUI.open();
+});
 
 addToBagButtons.forEach((button) => {
     button.addEventListener("click", () => {
+        const productId = button.dataset.productId;
         const productName = button.dataset.product;
 
-        if (!productName || !cartCount || !cartFeedback) {
+        const added = cart.add(productId);
+
+        if (!added) {
+            cartFeedback.textContent = "This product could not be added.";
             return;
         }
 
-        bagItemCount += 1;
-        cartCount.textContent = String(bagItemCount);
+        cartUI.render();
         cartFeedback.textContent = `${productName} added to your bag.`;
     });
 });
 
+// Mobile navigation
 const menuToggle = document.querySelector(".menu-toggle");
 const mobileNavigation = document.querySelector(".mobile-navigation");
 
